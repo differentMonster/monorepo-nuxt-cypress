@@ -1,16 +1,25 @@
 {
-  "name": "monorepo-nuxt-cypress",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
-  },
-  "devDependencies": {}
+    "name": "monorepo-nuxt-cypress",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "cy:open": "cypress open-ct"
+    },
+    "dependencies": {
+        "core-js": "^3.15.1",
+        "nuxt": "^2.15.7"
+    },
+    "devDependencies": {
+        "@cypress/vue": "^3.1.1",
+        "@cypress/webpack-dev-server": "^1.8.2",
+        "@vue/cli-service": "^5.0.1",
+        "cypress": "^9.5.1",
+        "html-webpack-plugin": "^4.5.2",
+        "start-server-and-test": "^1.14.0",
+        "webpack": "^5.70.0"
+    }
 }
